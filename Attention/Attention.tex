@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+%\usepackage{natbib}
+\usepackage[natbibapa]{apacite}
+\usepackage{hyperref}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{./images/attention} % Profile picture
+
+\cvname{Attention Net} % Your name
+\cvjobtitle{Sequence reducer} % Job title/career
+
+\cvdate{June 2017} % Date of birth
+\cvaddress{Ashish Vaswani (Google)} % Short address/location, use \newline if more than 1 line is required
+% \cvnumberphone{+43 678/12-75-414} % Phone number
+\cvsite{https://tinyurl.com/yxrdncy4} % Personal website
+% \cvmail{bernd@inodis.net} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+
+\shortinfo{
+	I am the very model of a modern ML algorithm ...
+} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{
+	{selecting appropriate context/5},
+	{reducing sequences/6}}
+	
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+% \skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 FUNCTIONALITY
+%----------------------------------------------------------------------------------------
+
+\section{Functional principles}
+
+\begin{itemize}	
+	\item \textbf{Selecting Context}. Based on the last hidden states + input, ... 
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	 WORKFLOW
+%----------------------------------------------------------------------------------------
+
+\section{Workflow}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{a.}{Input sequence}{}{}
+	
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 METRICS
+%----------------------------------------------------------------------------------------
+\vspace{-0.5cm}
+
+\section{Metrics}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{a.}{{b.} c.}
+
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+
+%----------------------------------------------------------------------------------------
+%	 OPTIMIZATION
+%----------------------------------------------------------------------------------------
+
+\section{Optimization}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{a.}{{b.} c.}
+
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+
+%----------------------------------------------------------------------------------------
+%	 VARIANTS
+%----------------------------------------------------------------------------------------
+
+\section{Variants}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitemshort{a.}{{b.} c.}
+
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+% \newpage % Start a new page
+
+% \makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+% \section{Other information}
+
+% \subsection{Review}
+
+% Bernd graduated in Software Development with a MSc. Thesis on Graphinius – an online graph exploration and analysis platform at Graz University of Technology, supervised by Prof. Dr. A. Holzinger.
+% He participated in 2 software-related research projects so far (one of which he initiated) and has contributed Web based software for graph extraction from (skin cancer) images as well as a generic graph computation and analysis library for real-time computations inside a Browser. This work was supplemented by his commitment to supervise a Masters project in web-based 3D graph visualization as well as a Bachelor thesis in applying Graphinius to the simulation of neurological processes. Bernd also recognizes the importance of human-in-the-loop approaches to data mining tasks and is therefore concerned about finding ways to visualize high-dimensional data structures for intuitive user understanding, currently within research experiments about interactive anonymization. Rounding off his academic curiosity, Bernd is always interested in packaging his insights into usable, web-based, Software.
+
+
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{apacite}
+% \bibliography{references}
+
+\end{document} 
